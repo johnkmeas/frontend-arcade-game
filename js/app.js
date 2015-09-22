@@ -11,7 +11,7 @@ var Enemy = function(x, y, speed) {
     this.speed =  speed;
 
 
-   
+
 };
 
 // Update the enemy's position, required method for game
@@ -22,7 +22,7 @@ Enemy.prototype.update = function(dt) {
     this.x = -75;
     this.randomSpeed();
    }
-   if (this.x > player.x -60 && this.x < player.x +60 && 
+   if (this.x > player.x -60 && this.x < player.x +60 &&
     this.y > player.y -60 && this.y < player.y +60
 
         ){
@@ -51,7 +51,7 @@ var playerXaxis = 200;
 var playerYaxis = 400;
 
 var player = function(){
-    this.sprite = 'images/char-boy.png'
+    this.sprite = 'images/char-boy.png';
     this.x = playerXaxis;
     this.y = playerYaxis;
 };
@@ -65,22 +65,24 @@ player.prototype.render = function() {
 player.prototype.resetPosition = function() {
     this.x = playerXaxis;
     this.y = playerYaxis;
-}
+};
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 allEnemies = [];
 
 for (var i = 0; i < 3; i++) {
-    var tempSpeed = Math.floor(Math.random() * 5 + 1) * 75;
-    allEnemies.push(new Enemy(-50, i * 83 + 50, tempSpeed));
+    var changeSpeed = Math.floor(Math.random() * 4 + 1) * 75;
+    allEnemies.push(new Enemy(-50, i * 82 + 50, changeSpeed));
 }
 // Place the player object in a variable called player
 var player = new player();
+
 var leftwall = 50;
 var rightwall = 380;
 var bottomwall = 380;
 var topwall = 130;
 var step = 100;
+
 player.handleInput =function(key){
     if (key === 'left'){
         if (this.x < leftwall){
@@ -99,15 +101,15 @@ player.handleInput =function(key){
         this.x = playerXaxis;
         this.y = playerYaxis + 82;
         }
-        this.y -= step * .82;
+        this.y -= step * 0.82;
     }
     if (key === 'down'){
         if (this.y > bottomwall){
             return null;
         }
-        this.y += step * .82;
+        this.y += step * 0.82;
     }
-}
+};
 
 
 // This listens for key presses and sends the keys to your
@@ -122,8 +124,3 @@ document.addEventListener('keyup', function(e) {
 
     player.handleInput(allowedKeys[e.keyCode]);
 });
-
-// HELPER Function
-var LogPlayerPosition = function() {
-    console.log('>>> PLAYER - X: ' + player.x + ' Y: ' + player.y + ' ' + player.wallChecker.leftWall + " " + player.wallChecker.rightWall);
-}
