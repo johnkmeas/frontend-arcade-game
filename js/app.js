@@ -56,7 +56,6 @@ var player = function(){
     this.y = playerYaxis;
 };
 player.prototype.update = function(dt) {
-
 };
 
 player.prototype.render = function() {
