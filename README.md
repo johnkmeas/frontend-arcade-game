@@ -6,6 +6,8 @@ to use JavaScript’s object oriented programming features to design classes cap
 #### Download repository
 In terminal run `git clone https://github.com/johnkmeas/frontend-arcade-game.git`
 
+#### Run in browser
+Open index.html in browser and use the arrow keys to move the character. Try to move character across the road into water. When the goal is reached or character collides with enemies, the game will restart.
 ## Object Oriented programming
 I think the best way to learn is with visual feedback and that is what this project was designed to do. I had to write code to get everything in a blank browser window to render and function like a game.
 
