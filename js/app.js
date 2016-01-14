@@ -9,9 +9,6 @@ var Enemy = function(x, y, speed) {
     this.x = x;
     this.y = y;
     this.speed =  speed;
-
-
-
 };
 
 // Update the enemy's position, required method for game

@@ -1,11 +1,13 @@
-frontend-nanodegree-arcade-game
-===============================
+# Frogger clone
+## frontend-nanodegree-arcade-game
+Udacity provided the engine and the goal of the project was
+to use JavaScript’s object oriented programming features to design classes capable of creating countless instances of similarly functioning objects.
 
-Students should use this rubric: https://www.udacity.com/course/viewer#!/c-ud015/l-3072058665/m-3072588797
+## Object Oriented programming
+I think the best way to learn is with visual feedback and that is what this project was designed to do. I had to write code to get everything on blank browser window to render and function like a game.
 
-for self-checking their submission.
+## Inspiration
+I finished this project feeling very inspired to create a game on my own in future project. Perhaps as I'll customize the image assets to create something unique.
 
-Steps to use
-1 -Load in browser
-2 -control player with arrow keypad
-3 -have fun
+### Skill
+- Object Oriented programming with Javascript
