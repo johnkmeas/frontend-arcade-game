@@ -12,6 +12,9 @@ In terminal run `git clone https://github.com/johnkmeas/frontend-arcade-game.git
 - Try to move character across the road into water.
 - When the goal is reached or character collides with enemies, the game will restart.
 
+### app.js
+Open `app.js` to see my work.
+
 ## Object Oriented programming
 I think the best way to learn is with visual feedback and that is what this project was designed to do. I had to write code to get everything in a blank browser window to render and function like a game.
 
